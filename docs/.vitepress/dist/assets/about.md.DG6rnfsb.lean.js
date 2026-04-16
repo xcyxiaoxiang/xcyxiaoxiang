@@ -1,0 +1,1 @@
+import{bV as e,aL as t,u as r,G as o}from"./chunks/framework.BCv3aMvO.js";const c=JSON.parse('{"title":"关于","description":"","frontmatter":{"title":"关于"},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),n={name:"about.md"};function i(l,a,s,h,u,g){return t(),r("div",null,[...a[0]||(a[0]=[o("",9)])])}const b=e(n,[["render",i]]);export{c as __pageData,b as default};

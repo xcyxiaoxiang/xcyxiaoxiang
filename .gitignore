@@ -1,7 +1,12 @@
 node_modules
-docs/.vitepress/dist
 docs/.vitepress/cache
 .vitepress/dist
 .vitepress/cache
 *.local
 .DS_Store
+# Editor files
+.vscode/
+.idea/
+*.suo
+*.sln
+*.sw?

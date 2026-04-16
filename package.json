@@ -1,8 +1,7 @@
 {
-  "name": "xcy-blog",
+  "name": "blog",
   "version": "1.0.0",
-  "private": true,
-  "description": "XCY 的技术博客 - 基于 VitePress",
+  "description": "xcyxiaoxiang's personal blog",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
@@ -12,6 +11,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "vitepress-theme-teek": "^1.5.6"
   }
 }

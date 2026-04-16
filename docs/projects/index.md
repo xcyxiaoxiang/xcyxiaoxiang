@@ -1,5 +1,4 @@
 ---
-layout: page
 title: 项目实践
 ---
 

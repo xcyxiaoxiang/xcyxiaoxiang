@@ -1,11 +1,10 @@
 ---
-layout: page
 title: 关于
 ---
 
 # 关于我
 
-一个热爱技术的开发者，持续学习中。
+一个热爱技术的全栈开发者，持续学习中。
 
 ## 技术栈
 
@@ -17,7 +16,7 @@ title: 关于
 
 ## 本站
 
-本博客使用 [VitePress](https://vitepress.dev/) 构建，部署在 [GitHub Pages](https://pages.github.com/) 上。
+本博客使用 [VitePress](https://vitepress.dev/) + [Teek 主题](https://vp.teek.top/) 构建，部署在 [GitHub Pages](https://pages.github.com/) 上。
 
 源码托管在 [GitHub](https://github.com/xcyxiaoxiang/blog)。
 
