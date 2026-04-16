@@ -225,7 +225,7 @@ const teekConfig = defineTeekConfig({
 });
 
 export default defineConfig({
-  base:'/',
+  base:'/xcyxiaoxiang',
   title: "xseay 的技术博客",
   description: "Python / Java / AI / DevOps / 全栈开发学习笔记",
   head: [["link", { rel: "icon", type: "image/png", href: "/logo.png" }]],
