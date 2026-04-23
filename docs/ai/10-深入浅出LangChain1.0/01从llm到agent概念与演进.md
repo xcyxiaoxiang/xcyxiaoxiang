@@ -1,10 +1,12 @@
 ---
 title: "01从llm到agent概念与演进"
 date: "2026-04-23T14:48:26.175Z"
-lastUpdated: "2026-04-23T14:48:26.175Z"
+lastUpdated: "2026-04-23T14:58:57.938Z"
 ---
 
 # 01-从LLM到Agent概念与演进
+
+![image](assets/image-20260423225843-35jyivw.png)
 
 # 从 LLM 到 Agent：概念与演进
 
