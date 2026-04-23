@@ -1,6 +1,7 @@
 // VitePress + Teek 主题配置
 import { defineConfig } from "vitepress";
 import { defineTeekConfig } from "vitepress-theme-teek/config";
+import { MermaidMarkdown, MermaidPlugin } from "vitepress-plugin-mermaid";
 
 // Teek 主题配置（defineTeekConfig 会把内容放到 themeConfig 下）
 const teekConfig = defineTeekConfig({
@@ -230,4 +231,16 @@ export default defineConfig({
   description: "Python / Java / AI / DevOps / 全栈开发学习笔记",
   head: [["link", { rel: "icon", type: "image/png", href: "/logo.png" }]],
   extends: teekConfig,
+  lastUpdated: true,
+  markdown: {
+    config: (md) => {
+      MermaidMarkdown(md);
+    },
+  },
+  vite: {
+    plugins: [MermaidPlugin()],
+    optimizeDeps: {
+      include: ["mermaid"],
+    },
+  },
 });
