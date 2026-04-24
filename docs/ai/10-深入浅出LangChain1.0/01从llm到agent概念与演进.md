@@ -1,12 +1,13 @@
 ---
-title: "01从llm到agent概念与演进"
-date: "2026-04-23T14:48:26.175Z"
-lastUpdated: "2026-04-23T14:58:57.938Z"
+title: "01-从LLM到Agent概念与演进"
+date: "2026-04-24T16:14:18.367Z"
+lastUpdated: "2026-04-24T16:14:18.367Z"
 ---
+
 
 # 01-从LLM到Agent概念与演进
 
-![image](assets/image-20260423225843-35jyivw.png)
+![image](/siyuan-assets/814e60f0e5ce855c1f85d0f79a091e0e.png)
 
 # 从 LLM 到 Agent：概念与演进
 
@@ -260,7 +261,13 @@ flowchart TB
 
 #### 注册硅基流动
 
-注册登录硅基流动官网（https://cloud.siliconflow.cn），申请 API Key，然后在模型广场选择你需要的模型，比如 `Qwen/Qwen3-8B`。
+注册登录硅基流动官网（https://cloud.siliconflow.cn），申请 API Key
+
+![image-20260331134241-fx9pfnw](/siyuan-assets/e147154e69e5a0664375b23f23d35e63.png)
+
+然后在模型广场选择你需要的模型，比如 `Qwen/Qwen3-8B`
+
+![image-20260331134434-bv2nh4t](/siyuan-assets/3b0c9f56c7a059f55a7a5c6bc9351edf.png)
 
 #### 安装依赖
 
