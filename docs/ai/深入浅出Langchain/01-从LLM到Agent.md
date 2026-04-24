@@ -1,13 +1,9 @@
 ---
-title: "01-从LLM到Agent概念与演进"
+title: "01-从LLM到Agent"
 date: "2026-04-24T17:07:54.261Z"
 lastUpdated: "2026-04-24T17:07:54.261Z"
 description: "如果你正在阅读这篇文章，大概率已经和 ChatGPT、通义千问、DeepSeek 等 AI 产品聊过天。你可能会问：既然大模型已经这么聪明了，为什么还需要学 Agent？为什么还需要 LangChain？ 因为\"能聊天\"和\"能办事\"之间，隔着一整条技术鸿沟。 一个只会聊天的 AI，就像一个只会纸上谈..."
 ---
-
-
-# 01-从LLM到Agent概念与演进
-
 # 从 LLM 到 Agent：概念与演进
 
 ## 一、本章导学

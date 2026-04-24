@@ -1,11 +1,10 @@
 ---
-title: 深入浅出LangChain
+title: 00-LangChain系列索引
 category: AI
 ---
-# 深入浅出LangChain 1.0 - 系列索引
+# 深入浅出LangChain - 系列索引
 
 > 本系列共 21 篇，系统讲解 LangChain 1.0 和 LangGraph 的核心概念与实战技巧。
-> 设计日期：2026-04-23
 
 ## 📚 系列概览
 
