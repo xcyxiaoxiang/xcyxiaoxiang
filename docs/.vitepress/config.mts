@@ -6,6 +6,12 @@ import { MermaidMarkdown, MermaidPlugin } from "vitepress-plugin-mermaid";
 // Teek 主题配置（defineTeekConfig 会把内容放到 themeConfig 下）
 const teekConfig = defineTeekConfig({
   // === 全局配置 ===
+  vitePlugins: {
+    sidebarOption: {
+      ignoreIndexMd: true,
+    },
+  },
+
   teekTheme: true,
   teekHome: true,
   vpHome: false,
