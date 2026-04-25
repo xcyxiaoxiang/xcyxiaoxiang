@@ -1,13 +1,12 @@
 ---
 title: "01-从LLM到Agent"
-date: "2026-04-24T18:01:20.222Z"
-lastUpdated: "2026-04-24T18:01:20.222Z"
+date: "2026-04-25T17:30:51.875Z"
+lastUpdated: "2026-04-25T17:30:51.875Z"
 description: "如果你正在阅读这篇文章，大概率已经和 ChatGPT、通义千问、DeepSeek 等 AI 产品聊过天。你可能会问：既然大模型已经这么聪明了，为什么还需要学 Agent？为什么还需要 LangChain？ 因为\"能聊天\"和\"能办事\"之间，隔着一整条技术鸿沟。 一个只会聊天的 AI，就像一个只会纸上谈..."
 ---
 
-# 01-从LLM到Agent
 
-# 从 LLM 到 Agent：概念与演进
+# 01-从LLM到Agent
 
 ## 一、本章导学
 
@@ -106,11 +105,11 @@ flowchart LR
 
 　　理解这一点很重要，因为 LLM 的所有能力和局限都源于这个本质。它能写出通顺的代码、流畅的文章、甚至模拟推理过程，但它存在三个根本性的局限：
 
-**局限一：没有行动能力。**  LLM 只能生成文本，不能执行动作。它不能帮你搜索网页、读取文件、查询数据库、发送邮件。它的一切输出都停留在"文字"层面。
+**局限一：没有行动能力。**   LLM 只能生成文本，不能执行动作。它不能帮你搜索网页、读取文件、查询数据库、发送邮件。它的一切输出都停留在"文字"层面。
 
-**局限二：没有持久记忆。**  每次对话都是独立的，模型不记得上一轮聊了什么（除非你把历史对话塞进 Prompt）。一旦超出上下文窗口的限制，前面的内容就会被截断遗忘。
+**局限二：没有持久记忆。**   每次对话都是独立的，模型不记得上一轮聊了什么（除非你把历史对话塞进 Prompt）。一旦超出上下文窗口的限制，前面的内容就会被截断遗忘。
 
-**局限三：没有实时信息。**  模型的知识截止于训练数据的最后时间点。你问它"今天北京的天气"，它无法给出准确答案，因为它无法访问互联网。
+**局限三：没有实时信息。**   模型的知识截止于训练数据的最后时间点。你问它"今天北京的天气"，它无法给出准确答案，因为它无法访问互联网。
 
 　　用一个生活化的比喻：LLM 就像一位博学但被困在图书馆里的学者——他读过万卷书，能给你精彩的答案，但他出不了图书馆的门，看不到窗外的实时世界，也无法帮你寄一封信。
 
@@ -158,13 +157,13 @@ flowchart TD
 
 　　上图展示了 Agent 的四大模块及其协作关系。每个模块的职责如下：
 
-**记忆（Memory）** ：LLM 本身是无状态的，但 Agent 需要"记住"对话历史、中间结果和用户偏好。记忆分为两层——短期记忆（当前对话的上下文）和长期记忆（跨会话的持久化存储，如向量数据库）。
+**记忆（Memory）**  ：LLM 本身是无状态的，但 Agent 需要"记住"对话历史、中间结果和用户偏好。记忆分为两层——短期记忆（当前对话的上下文）和长期记忆（跨会话的持久化存储，如向量数据库）。
 
-**规划（Planning）** ：面对复杂任务，Agent 需要将目标拆解为可执行的子步骤，并选择合适的执行策略。常见的规划方法包括 ReAct（Reasoning + Acting）、Plan-and-Execute 等。
+**规划（Planning）**  ：面对复杂任务，Agent 需要将目标拆解为可执行的子步骤，并选择合适的执行策略。常见的规划方法包括 ReAct（Reasoning + Acting）、Plan-and-Execute 等。
 
-**工具调用（Tools）** ：Agent 通过调用外部工具来突破 LLM 的能力边界。工具可以是搜索引擎、数据库查询、代码解释器、文件系统操作、第三方 API 等。LLM 的 Function Calling 能力是工具调用的基础，但 Agent 能自主判断何时调用、调用哪个工具。
+**工具调用（Tools）**  ：Agent 通过调用外部工具来突破 LLM 的能力边界。工具可以是搜索引擎、数据库查询、代码解释器、文件系统操作、第三方 API 等。LLM 的 Function Calling 能力是工具调用的基础，但 Agent 能自主判断何时调用、调用哪个工具。
 
-**执行（Execution）** ：Agent 遵循 Think → Act → Observe 的闭环循环执行任务。每一步都会观察执行结果，判断是否需要调整策略，直到任务完成或明确无法继续。
+**执行（Execution）**  ：Agent 遵循 Think → Act → Observe 的闭环循环执行任务。每一步都会观察执行结果，判断是否需要调整策略，直到任务完成或明确无法继续。
 
 　　下面这个对比表更直观地展示了 LLM 和 Agent 在各维度的差异：
 
@@ -280,7 +279,7 @@ venv\Scripts\activate
 source venv/bin/activate
 
 # 安装核心包
-pip install langchain langchain-core langgraph langchain-siliconflow
+pip install langchain langchain-core langgraph langchain-openai
 
 # 安装环境变量管理工具
 pip install python-dotenv
@@ -335,8 +334,9 @@ from langchain.chat_models import init_chat_model
 load_dotenv()
 
 model = init_chat_model(
-    "qwen3-8b",
-    model_provider="siliconflow",
+    "Qwen/Qwen3-8B",
+    model_provider="openai",
+    base_url="https://api.siliconflow.cn/v1",
     temperature=0.7,
 )
 
