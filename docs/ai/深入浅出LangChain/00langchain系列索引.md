@@ -1,15 +1,14 @@
 ---
 title: "00-LangChain系列索引"
-date: "2026-04-24T18:00:15.269Z"
-lastUpdated: "2026-04-24T18:00:15.269Z"
+date: "2026-04-24T17:58:55.171Z"
+lastUpdated: "2026-04-25T17:30:15.139Z"
 description: "本系列共 21 篇，系统讲解 LangChain 1.0 和 LangGraph 的核心概念与实战技巧。"
 ---
 
 
 
-# 00-LangChain系列索引
 
-# LangChain 1.0 学习笔记 - 系列索引
+# 00-LangChain系列索引
 
 > 本系列共 21 篇，系统讲解 LangChain 1.0 和 LangGraph 的核心概念与实战技巧。
 
@@ -30,10 +29,10 @@ description: "本系列共 21 篇，系统讲解 LangChain 1.0 和 LangGraph 的
 ### Part 1：基础速通
 
 |编号|标题|关键词|
-| ------| -----------------------------------| ------------------------------------------|
+| ------| -----------------------------------| -------------------------------------|
 |01|从 LLM 到 Agent：概念与演进|LLM、Agent 四大模块、LangChain 定位|
 |02|第一个 AI Agent：环境搭建与初体验|uv/pip、API Key、create_agent|
-|03|LangChain 1.0 生态全景与迁移指南|六大组件、0.x→1.0 迁移、init_chat_model|
+|03|LangChain 1.0 生态全景与迁移指南|六大组件、0.x→1.0 迁移|
 
 ### Part 2：核心能力
 
