@@ -1,12 +1,13 @@
 ---
-title: "LangChain 1.0 开篇：从大语言模型到智能 Agent 的演进之路"
+title: "01-从LLM到Agent"
 date: "2026-04-26T01:26:21+08:00"
 lastmod: "2026-05-12T23:43:02+08:00"
 tags: ["LangChain", "Agent", "人工智能", "AI"]
-lastUpdated: "2026-05-14T09:45:40.422Z"
+lastUpdated: "2026-05-14T10:00:58.426Z"
 description: "如果你正在阅读这篇文章，大概率已经和 ChatGPT、通义千问、DeepSeek 等 AI 产品聊过天。你可能会问：既然大模型已经这么聪明了，为什么还需要学 Agent？为什么还需要 LangChain？ 因为\"能聊天\"和\"能办事\"之间，隔着一整条技术鸿沟。 一个只会聊天的 AI，就像一个只会纸上谈..."
 ---
 
+# LangChain 1.0 开篇：从大语言模型到智能 Agent 的演进之路
 ## 一、本章导学
 
 如果你正在阅读这篇文章，大概率已经和 ChatGPT、通义千问、DeepSeek 等 AI 产品聊过天。你可能会问：既然大模型已经这么聪明了，为什么还需要学 Agent？为什么还需要 LangChain？
