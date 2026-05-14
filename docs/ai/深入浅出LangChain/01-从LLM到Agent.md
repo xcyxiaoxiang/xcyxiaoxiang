@@ -3,7 +3,7 @@ title: "LangChain 1.0 开篇：从大语言模型到智能 Agent 的演进之路
 date: "2026-04-26T01:26:21+08:00"
 lastmod: "2026-05-12T23:43:02+08:00"
 tags: ["LangChain", "Agent", "人工智能", "AI"]
-lastUpdated: "2026-05-14T09:10:12.179Z"
+lastUpdated: "2026-05-14T09:45:40.422Z"
 description: "如果你正在阅读这篇文章，大概率已经和 ChatGPT、通义千问、DeepSeek 等 AI 产品聊过天。你可能会问：既然大模型已经这么聪明了，为什么还需要学 Agent？为什么还需要 LangChain？ 因为\"能聊天\"和\"能办事\"之间，隔着一整条技术鸿沟。 一个只会聊天的 AI，就像一个只会纸上谈..."
 ---
 
@@ -247,10 +247,10 @@ flowchart TB
 
 #### 注册硅基流动
 注册登录硅基流动官网（https://cloud.siliconflow.cn），申请 API Key
-![[Pasted image 20260514170922.png]]
+![](/obsidian-assets/f5d8a72640799af8.png)
 
 然后在模型广场选择你需要的模型，比如 `Qwen/Qwen3-8B`
-![](Pasted%20image%2020260514170957.png)
+![](/obsidian-assets/9748d1fcba2611c4.png)
 
 #### 安装依赖
 
