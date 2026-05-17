@@ -1,6 +1,7 @@
 ---
 title: Python 学习笔记
 category: Python
+inHomePost: false
 ---
 
 # Python 学习笔记

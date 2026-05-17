@@ -211,9 +211,9 @@ const teekConfig = defineTeekConfig({
     { text: "Python专栏", link: "/python/" },
     { text: "DevOps专栏", link: "/devops/" },
     { text: "人工智能专栏", link: "/ai/" },
-    { text: "Java专栏", link: "/java/" },
-    { text: "数据库专栏", link: "/database/" },
-    { text: "项目实践", link: "/projects/" },
+    // { text: "Java专栏", link: "/java/" },
+    // { text: "数据库专栏", link: "/database/" },
+    // { text: "项目实践", link: "/projects/" },
     { text: "关于", link: "/about/" },
   ],
 

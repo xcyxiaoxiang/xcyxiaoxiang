@@ -1,5 +1,6 @@
 ---
 title: 关于
+inHomePost: false
 ---
 
 # 关于我

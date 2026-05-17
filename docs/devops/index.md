@@ -1,6 +1,7 @@
 ---
 title: DevOps 学习笔记
 category: DevOps
+inHomePost: false
 ---
 
 # DevOps 学习笔记

@@ -1,6 +1,7 @@
 ---
 title: 00-LangChain系列索引
 category: AI
+inHomePost: false
 ---
 # 深入浅出LangChain - 系列索引
 

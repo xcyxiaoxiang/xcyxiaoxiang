@@ -1,6 +1,7 @@
 ---
 title: 深入浅出LangChain
 category: AI
+inHomePost: false
 ---
 # 深入浅出LangChain 1.0 - 系列索引
 
