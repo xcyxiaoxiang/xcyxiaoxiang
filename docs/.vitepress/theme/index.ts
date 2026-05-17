@@ -17,6 +17,9 @@ import "vitepress-theme-teek/theme-chalk/tk-home-card-hover.css";
 
 // ...
 
+// 侧边栏文本超长省略
+import "./sidebar-ellipsis.css";
+
 // ...
 
 export default {

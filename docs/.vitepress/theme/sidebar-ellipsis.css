@@ -1,0 +1,16 @@
+/* 侧边栏文本超长时不换行，显示省略号 */
+.VPSidebar .VPSidebarItem .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 确保链接容器也支持溢出隐藏 */
+.VPSidebar .VPSidebarItem .link {
+  overflow: hidden;
+}
+
+/* 确保 item 容器支持 flex 收缩 */
+.VPSidebar .VPSidebarItem .item {
+  overflow: hidden;
+}
